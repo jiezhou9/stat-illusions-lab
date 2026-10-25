@@ -1,0 +1,36 @@
+# Python
+__pycache__/
+*.py[cod]
+*.egg-info/
+dist/
+build/
+.venv/
+venv/
+
+# Testing and tooling
+.pytest_cache/
+.ruff_cache/
+.coverage
+.coverage.*
+htmlcov/
+coverage.xml
+
+# Notebooks
+.ipynb_checkpoints/
+
+# Streamlit
+.streamlit/secrets.toml
+
+# Internal planning notes
+NOTES.md
+
+# Local diagnostics and screenshot tooling
+.dsh-acl-recovery/
+.playwright-tmp/
+
+# Editors and OS
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+*.log

@@ -1,0 +1,22 @@
+cff-version: 1.2.0
+message: "If you use this project in teaching, research, or a course, please cite it."
+title: "Statistical Illusions Lab"
+abstract: >-
+  An interactive, open-source collection of five statistical illusions:
+  Simpson's paradox, the base-rate fallacy, p-hacking, regression to the mean,
+  and confidence-interval coverage. Each experiment pairs a reproducible
+  simulation with an explanation of the underlying mechanism and common
+  misinterpretations.
+authors:
+  - name: "The stat-illusions-lab contributors"
+version: 0.1.0
+date-released: "2026-10-23"
+license: MIT
+repository-code: "https://github.com/jiezhou9/stat-illusions-lab"
+keywords:
+  - statistics
+  - statistics education
+  - data visualization
+  - simulation
+  - reproducibility
+  - streamlit

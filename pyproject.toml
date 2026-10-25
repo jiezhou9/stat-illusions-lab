@@ -1,0 +1,70 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "stat-illusions-lab"
+version = "0.1.0"
+description = "Interactive simulations that expose common statistical illusions."
+readme = "README.md"
+requires-python = ">=3.10"
+license = { text = "MIT" }
+authors = [{ name = "stat-illusions-lab contributors" }]
+keywords = [
+  "statistics",
+  "data-visualization",
+  "education",
+  "simulation",
+  "streamlit",
+]
+classifiers = [
+  "Development Status :: 4 - Beta",
+  "Intended Audience :: Education",
+  "Intended Audience :: Science/Research",
+  "License :: OSI Approved :: MIT License",
+  "Programming Language :: Python :: 3",
+  "Programming Language :: Python :: 3.10",
+  "Programming Language :: Python :: 3.11",
+  "Programming Language :: Python :: 3.12",
+  "Topic :: Scientific/Engineering :: Mathematics",
+  "Topic :: Education",
+]
+dependencies = [
+  "numpy>=1.24,<3",
+  "pandas>=2.0,<4",
+  "plotly>=5.18,<8",
+  "streamlit>=1.50,<2",
+]
+
+[project.optional-dependencies]
+dev = [
+  "pytest>=8.0",
+  "pytest-cov>=5.0",
+  "ruff>=0.5",
+]
+screenshots = ["playwright>=1.50"]
+
+[project.urls]
+Homepage = "https://github.com/jiezhou9/stat-illusions-lab"
+Repository = "https://github.com/jiezhou9/stat-illusions-lab"
+Issues = "https://github.com/jiezhou9/stat-illusions-lab/issues"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "-q"
+pythonpath = ["src"]
+
+[tool.coverage.run]
+source = ["stat_illusions"]
+branch = true
+
+[tool.ruff]
+line-length = 100
+target-version = "py310"
+
+[tool.ruff.lint]
+select = ["E", "F", "I", "UP", "B"]
+ignore = ["E501"]
