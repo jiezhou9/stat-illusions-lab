@@ -10,6 +10,9 @@
 </p>
 
 <p align="center">
+  <a href="https://stat-illusions-lab.streamlit.app/">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Live Demo">
+  </a>
   <a href="https://github.com/jiezhou9/stat-illusions-lab/actions/workflows/ci.yml">
     <img src="https://github.com/jiezhou9/stat-illusions-lab/actions/workflows/ci.yml/badge.svg" alt="CI">
   </a>
@@ -20,6 +23,8 @@
 
 > 统计最危险的地方，往往不是算错，而是**算对了却解释错**。
 > 这个项目把常见的统计错觉做成可调参数的互动实验：先让你形成直觉，再让你亲手把它推翻。
+
+**在线试用**：[stat-illusions-lab.streamlit.app](https://stat-illusions-lab.streamlit.app/)
 
 [English README](README.en.md) · [方法说明](docs/methods.md) · [发布清单](docs/publishing.md) · [参与贡献](CONTRIBUTING.md)
 
@@ -200,13 +205,15 @@ CI 会在 Python 3.10、3.11、3.12 上运行测试和 Ruff。
 - 它展示的是“某个机制如何产生某种错觉”，不是对现实数据的结论；真实应用仍需考虑抽样设计、缺失数据、模型选择和研究者自由度。
 - 更完整的假设与边界见 [docs/methods.md](docs/methods.md)。
 
-## 部署到 Streamlit Community Cloud
+## 部署到 Streamlit Community Cloud（已完成）
+
+当前线上地址：<https://stat-illusions-lab.streamlit.app/>
 
 1. 把仓库推到 GitHub；
 2. 在 [share.streamlit.io](https://share.streamlit.io) 新建 app；
 3. 入口文件填 `app.py`；
 4. 依赖文件使用仓库根目录的 `requirements.txt`；
-5. 部署完成后，把线上 Demo 链接补到 README 顶部。
+5. 部署完成后，把线上 Demo 链接补到 README 顶部（已完成）。
 
 > 这个项目不需要数据库、密钥或用户上传数据，部署成本很低。
 

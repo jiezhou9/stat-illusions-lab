@@ -9,12 +9,17 @@
 </p>
 
 <p align="center">
+  <a href="https://stat-illusions-lab.streamlit.app/">
+    <img src="https://static.streamlit.io/badges/streamlit_badge_black_white.svg" alt="Live Demo">
+  </a>
   <a href="https://github.com/jiezhou9/stat-illusions-lab/actions/workflows/ci.yml">
     <img src="https://github.com/jiezhou9/stat-illusions-lab/actions/workflows/ci.yml/badge.svg" alt="CI">
   </a>
   <img src="https://img.shields.io/badge/Python-3.10%2B-14213D" alt="Python 3.10+">
   <img src="https://img.shields.io/badge/License-MIT-2A9D8F" alt="MIT License">
 </p>
+
+**Live demo:** [stat-illusions-lab.streamlit.app](https://stat-illusions-lab.streamlit.app/)
 
 [中文 README](README.md) · [Methods](docs/methods.md) · [Publishing checklist](docs/publishing.md) · [Contributing](CONTRIBUTING.md)
 
@@ -124,14 +129,16 @@ CI runs on Python 3.10, 3.11 and 3.12.
 - The experiments show how a mechanism can produce an illusion; they are not empirical conclusions about real data.
 - See [docs/methods.md](docs/methods.md) for assumptions, edge cases and references.
 
-## Deploy
+## Deploy (live)
+
+Live app: <https://stat-illusions-lab.streamlit.app/>
 
 This app is designed for Streamlit Community Cloud:
 
 1. Push the repository to GitHub.
 2. Create an app at [share.streamlit.io](https://share.streamlit.io).
 3. Use `app.py` as the entry point and `requirements.txt` as the dependency file.
-4. Add the live demo link near the top of this README.
+4. Add the live demo link near the top of this README (done).
 
 ## License
 

@@ -45,7 +45,7 @@ dev = [
 screenshots = ["playwright>=1.50"]
 
 [project.urls]
-Homepage = "https://github.com/jiezhou9/stat-illusions-lab"
+Homepage = "https://stat-illusions-lab.streamlit.app/"
 Repository = "https://github.com/jiezhou9/stat-illusions-lab"
 Issues = "https://github.com/jiezhou9/stat-illusions-lab/issues"
 

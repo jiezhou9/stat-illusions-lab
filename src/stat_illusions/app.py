@@ -610,14 +610,15 @@ def _scroll_to_top() -> None:
     st.html(
         """
         <script>
-          const root = window.parent !== window ? window.parent : window;
           const reset = () => {
-            try {
-              const main = root.document.querySelector('[data-testid="stMain"]');
-              if (main) main.scrollTo(0, 0);
-              root.scrollTo(0, 0);
-            } catch (error) {
-              // Cross-origin iframe: nothing to reset from here.
+            for (const view of [window, window.parent]) {
+              try {
+                const main = view.document.querySelector('[data-testid="stMain"]');
+                if (main) main.scrollTo(0, 0);
+                view.scrollTo(0, 0);
+              } catch (error) {
+                // Cross-origin iframe: nothing to reset from here.
+              }
             }
           };
           setTimeout(reset, 0);
