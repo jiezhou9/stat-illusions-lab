@@ -3,6 +3,10 @@
 Run locally with:
 
     streamlit run app.py
+
+Live demo:
+
+    https://stat-illusions-lab.streamlit.app/
 """
 
 from __future__ import annotations
